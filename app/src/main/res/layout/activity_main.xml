@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <!-- Back Button with Arrow -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:textColor="@android:color/white"
+        android:drawableTint="@android:color/black" />
+
+    <!-- Title Text (Centered) -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSWD-Abuyog, Leyte App"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- WebView to display pages -->
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_text"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>
